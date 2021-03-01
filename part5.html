@@ -2,31 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>How the Internet Works</title>
 </head>
 <body>
-    
-<div>
 
-  <div class="header">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">
 
-    <h2><u>Encryption Public Keys</u></h2>
-
-  </div>
-
-  <div class="content">
-    <div class="header">
-
-      <img src="data:image/png;base64,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" width="500" height="250" alt="Encryption Public Keys">
-      
+            What is the Internet
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ">
+                <li class="nav-item">
+                    <a class="nav-link" href="part1.html">How the Internet Works, Part 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="part2.html">The Internet- Wires, Cables, Wifi Part 2 </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="part3.html">The Internet- IP Addresses and DNS Part 3</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="part4.html">The Internet- Packets, Routing and Reliability Part 4</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="part5.html">The Internet- HTTP and HTML Part 5 </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="part6.html">The Internet- Encryption Public Keys Part 6</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="part7.html">The Internet- Cyber Security Crime Part 7</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <p style="margin-left:15%; margin-right:15%;">Cybersecurity crime is a huge problem within society. Credit card numbers being leaked by huge databases, health care records becoming compromised, and even nuclear plant centrifuges getting hacked. These are just some of the problems which have been tapped in by cyber criminals. They find exploitations within hardware and software in order to commit these acts or it’s based on the unintentional decision making of the users who use the software. There is no certain profile when it comes to cyber criminals. The spectrum is very wide, it can range from a terrorist who’s trying to inflict major damage to a group or organization to a teenager in suburbia who’s competing for bragging rights. Cyber crime has been such a problem that major armies have a division where they strictly focus on cyber related problems. They even say the next World War wouldn’t be fought with weapons, but with computers. These computers would focus on shutting down opposing nations water supplies, energy grids, and transportation systems. 
+</nav>
 
-        Computer viruses, DDos attacks, and phishing websites are all part of cyber crime which can infect computer users. Attackers have different ways of initiating attacks. One being to get you the user to download a program that is actually a virus, for example: If you receive a security update from a company you never heard of on your computer, there could be a good chance that’s a gateway to a virus. Another way attackers can initiate an attack is by exploiting a backdoor from a program you’re using. Once infected by a virus, the virus can steal and delete any of the information on your computer, control your programs, and enable remote operations which means they can access your computer from any computer. DDos attacks are a way that attackers use to down servers. They send billions and billions of packets over to the server which overload the system resulting in an outage. Phishing scams are fake web pages that pose as banks, shopping websites, or even email websites to attain login credentials from the user. 90%  a system gets hacked isn’t because of a security bug, but rather a human mistake. There’s some steps you could take to make sure you’re not an easy target. Make sure you use strong passwords, check for authentic web addresses, install system security updates often, and don’t install software you don’t trust. Although government agencies focus on eliminating these kind of attacks, they simply can’t eliminate all of them especially since cyber criminals get smarter each year.
 
-  
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1>The Internet- HTTP and HTML</h1>
+            <!-- Please edit this, just add something--><p class="lead text-muted">Cybersecurity crime is a huge problem within society. There is no certain profile when it comes to cyber criminals, but they are around and are a menace to society.</p>
+            <p>
+                <a href="part4.html" class="btn btn-primary my-2">Previous Page</a>
+                <a href="part6.html" class="btn btn-secondary my-2">Next Page</a>
+            </p>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div style = "width:100%;height:25%;">
+                            <img src="img/webPage.png" width="100%" alt = "Picture"/>
+                        </div>
+                        <div class="card-body">
+                            <p>The web browser that we use to open up web pages and different apps on the internet.</p>
+                            <p>HTTP stands for HyperText Transfer Protocol. It is the language used to communicate between web browsers and servers. </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div style = "width:100%;height:45%;">
+                            <img src="img/Protection2.png" width="100%" alt = "Picture"/>
+                        </div>
+                        <!--width="100%" height="225"-->
+                        <div class="card-body">
+                            <p>If the request was ever intercepted, you get a “get” request which is just “get” and then the document.</p>
+                            <p>When you enter information you create a post request. The server sees and it allows into the website and also sends an invisible piece of information called cookies which allows the websites to remember who you are. The cookie data is an ID card for tumblr and an ID number that identifies you as you.</p>
+                            <p>The internet is completely open, the connections are shared, and the information is sent in plain text. Safe websites present hackers by communicating on a secure channel.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div style = "width:100%;height:25%;">
+                            <img src="img/hacker2.png" width="100%" alt = "Picture"/>
+                        </div>
+                        <div class="card-body">
+                            <p> HTML stands for Hyper Text Markup Language. The text of a webpage is connected to the html, but other parts like images and videos are separate parts with unique urls.</p>
+                            <p>If the page has a lot of images, it requires more http requests, causing the pages to load slower.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
 </div>
-</div>
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
