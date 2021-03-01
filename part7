@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>How the Internet Works</title>
+</head>
+<body>
+
+
+<main role="main">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1>The Internet- Cyber Security Crime</h1>
+            <!-- Please edit this, just add something--><p class="lead text-muted">Cybersecurity crime is a huge problem within society. There is no certain profile when it comes to cyber criminals, but they are around and are a menace to society.</p>
+            <p>
+                <a href="part6.html" class="btn btn-primary my-2">Previous Page</a>
+                <a href="index.html" class="btn btn-secondary my-2">Home Page</a>
+            </p>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div style = "width:100%;height:25%;">
+                            <img src="img/hacker.jpg" width="100%" alt = "Picture"/>
+                        </div>
+                        <div class="card-body">
+                            <p>Cyber crime has been such a problem that major armies have a division where they strictly focus on cyber related problems.</p>
+                            <p>It is a rumor that within the near future wars will be fought online, having hackers shut down water supplies, turning off energy grids, and even shutting down transportation systems.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div style = "width:100%;height:45%;">
+                            <img src="img/virus.png" width="100%" alt = "Picture"/>
+                        </div>
+                        <!--width="100%" height="225"-->
+                        <div class="card-body">
+                            <p>Attackers have different ways of starting their attacks: programming the user to download a virus, exploiting the back door from a program.</p>
+                            <p>This leaves the computer that you are using vulnerable, making it much easier for a hacker to get access to all your files.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <div style = "width:100%;height:25%;">
+                            <img src="img/protection.jpg" width="100%" alt = "Picture"/>
+                        </div>
+                        <div class="card-body">
+                            <p> There’s some steps you could take to make sure you’re not an easy target. Make sure you use strong passwords, check for authentic web addresses, install system security updates often, and don’t install software you don’t trust.</p>
+                            <p>  Although government agencies focus on eliminating these kinds of attacks, they simply can’t eliminate all of them, especially since cyber criminals get smarter each year.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+</div>
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right">
+            <a href="#">Back to top</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
