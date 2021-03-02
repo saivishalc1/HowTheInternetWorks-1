@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<html lan<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,10 +9,10 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="#">
-            
+
             What is the Internet
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,76 +39,63 @@
                 </li>
             </ul>
         </div>
-    </div>     
+    </div>
 </nav>
-
 
 <main role="main">
     <section class="jumbotron text-center">
         <div class="container">
-            <h1>The Internet - Packets, Routing, and Reliablity</h1>
-            <!-- Please edit this, just add something--><p class="lead text-muted">Internet has become a big part of society which ultimatly led to the creation of wifi. Wifi started growing rapidly because it allowed individuals to access the internet.</p>
+            <h1>The Internet - IP Addresses and DNS</h1>
+            <p class="lead text-muted">The IP Addresses and DNS have become a significant part of the internet, scroll down to read mroe about it!</p>
             <p>
                 <a href="part3.html" class="btn btn-primary my-2">Previous Page</a>
-                <a href="" class="btn btn-secondary my-2">Next Page</a>
+                <a href="part5.html" class="btn btn-secondary my-2">Next Page</a>
             </p>
         </div>
     </section>
 
-    <div class="album py-5 bg-light">
-        <div class="container">
+<div class="card-group">
+    <div class="card">
+        <img src="https://web.njit.edu/~sm47/HowInternetWork/img/Router.png" height="350px" width="350px" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><u>Data</u></h5>
+            <p>How is data delivered to you reliably?</p>
+            <p>The Internet is not made up of direct dedicated connections, it would be impossible to keep things working of users join, especially since there is guaranteed that each cable has a secure connection to the host.  </p>
+            <p>Data travels through the internet in a must less direction fashion.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated on 03/01/2021</small>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://web.njit.edu/~sm47/HowInternetWork/img/Tunnel.png" height="350px" width="350px" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><u>How Information is Transferred</u></h5>
+            <p>Information does not follow a straight path if anything it moves around when traveling throughout the internet.</p>
+            <p>Information travels in packets of data, which is like a car, depending on the traffic you use different roads to get to the destination.</p>
+            <p>Data depending on the size can move at different parts, taking different routes and arriving at different times but once delivered they can reassemble to make the data whole again.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated on 03/01/2021</small>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://web.njit.edu/~sm47/HowInternetWork/img/IPAddress.png" class="card-img-top" height="350px" width="350px" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"><u>How Devices transfer Data</u></h5>
+            <p> Each packet has the IP address of where it came from and where it is going.</p>
+            <p>  When sending packets, the router chooses the cheapest available patches. “cheapest”: time – polycystic sand relationships between companies.</p>
+            <p>Most user do not see or care for Internet addresses. The Domain Name System, DNS, creates websites with corresponding addresses.</p>
+            <p> When a packet enters a router, a routing table (list containing routes to a specific network) can be used to determine the following hop address for the packet's source and destination address. Each packet may then be sent to the destination by a separate path, if necessary.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated on 03/01/2021</small>
+        </div>
+    </div>
+</div>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div style = "width:100%;height:25%;">
-                            <img src="img/Router.png" width="100%" alt = "Picture"/>
-                        </div>
-                        <div class="card-body">
-                            <p>How is data delivered to you reliably?</p>
-                            <p>The Internet is not made up of direct dedicated connections, it would be impossible to keep things working of users join, especially since there is guaranteed that each cable has a secure connection to the host.  </p>
-                            <p>Data travels through the internet in a must less direction fashion.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div style = "width:100%;height:45%;">
-                            <img src="img/Tunnel.png" width="100%" alt = "Picture"/>
-                        </div>
-                        <!--width="100%" height="225"-->
-                        <div class="card-body">
-                            <p>Information does not follow a straight path if anything it moves around when traveling throughout the internet.</p>
-                            <p>Information travels in packets of data, which is like a car, depending on the traffic you use different roads to get to the destination.</p>
-                            <p>Data depending on the size can move at different parts, taking different routes and arriving at different times but once delivered they can reassemble to make the data whole again.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div style = "width:100%;height:25%;">
-                            <img src="img/IPAddress.png" width="100%" alt = "Picture"/>
-                        </div>
-                        <div class="card-body">
-                            <p> Each packet has the IP address of where it came from and where it is going.</p>
-                            <p>  When sending packets, the router chooses the cheapest available patches. “cheapest”: time – polycystic sand relationships between companies.</p>
-                            <p>Most user do not see or care for Internet addresses. The Domain Name System, DNS, creates websites with corresponding addresses.</p>
-                            <p> When a packet enters a router, a routing table (list containing routes to a specific network) can be used to determine the following hop address for the packet's source and destination address. Each packet may then be sent to the destination by a separate path, if necessary.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
 
 
             </div>
@@ -117,7 +104,17 @@
 
 </main>
 
-
+<!--div class="content">
+    <div class="header">
+        <img src="https://www.i2coalition.com/wp-content/uploads/2019/02/the-internet-is-1500x900.png" width="500" height="250" alt="What is the Internet: Part 1">
+    </div>
+    <ul>
+        <li style="margin-left:15%; margin-right:15%;"> The Internet was created by 2 men called Bob Kahn and Vint Cerf.  </li>
+        <li style="margin-left:15%; margin-right:15%;"> The Internet was the result of ARPANET or Advanced Research Projects Agency Network.  </li>
+        <li style="margin-left:15%; margin-right:15%;"> Paul Baran was trying to make something that could survive a nuclear attack and make it possible to communicate still.  </li>
+        <li style="margin-left:15%; margin-right:15%;"> The internet is made up of large independently operated networks.  </li>
+    </ul>
+</div-->
 </div>
 <footer class="text-muted">
     <div class="container">
@@ -128,4 +125,3 @@
 </footer>
 
 </body>
-</html>
